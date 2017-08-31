@@ -1,0 +1,70 @@
+##七牛云的key
+qiniu:
+  accessKey: canKgBzqR_AN_EviuOuWYUT4Vko3gi5dTNZFiQ4C
+  secretKey: feAWGHn_UmhGU2ckkHd9F2q2qFpC7lPqlemvEOCH
+  bucketName: eumji025
+  basePath: http://of8rkrh1w.bkt.clouddn.com/
+
+## 百度推送 - 定时任务
+baidu:
+  task:
+    postUrl: http://data.zz.baidu.com/urls?site=www.eumji025.com&token=hHzO6TjfJBf4KA53
+    baseUrl: http://www.baidu.com # 你的域名
+
+
+#数据库连接配置
+spring:
+  datasource:
+    url: jdbc:mysql://123.207.172.139:3306/lollipop-blog
+    username: lollipop
+    password: lollipop
+    driver-class-name: com.mysql.jdbc.Driver
+  thymeleaf:
+    #mode: HTML5
+    cache: false
+    mode: LEGACYHTML5
+  mail:
+    host: smtp.qq.com  #邮箱服务器地址
+    username: system@wasis.cn      #
+    password: fmjfpgxyhcepcjcc     #
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+  #字符集和json格式工具
+  http:
+    encoding:
+      charset: utf-8
+    converters:
+      preferred-json-mapper: jackson
+    multipart:
+      max-file-size: 10MB
+  application:
+    name: lollipop-blog
+
+#mynatis配置
+mybatis:
+  type-aliases-package: io.github.mysar.blog.modal.vo
+  #mapper加载路径
+  mapper-locations: classpath*:/mapper/*Mapper.xml
+  #myatbis配置文件
+  config-location: classpath:mybatis-conf.xml
+#加载log4j2
+logging:
+  config: classpath:log4j2.xml
+  level: debug
+  file:
+server:
+  session-timeout : 3600
+  port: 8088
+
+
+
+
+
+
+
