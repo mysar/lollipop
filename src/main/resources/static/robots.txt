@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: http://你的域名/sitemap.mapper
