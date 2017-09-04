@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="zh">
+
+<body>
+    <head th:fragment="head">
+        <meta charset="utf-8">
+        <title>Lolipop | 博客</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Lolipop | 博客">
+        <meta property="og:url" content="http://你的域名">
+        <meta property="og:site_name" content="Lolipop | 博客">
+        <meta property="og:description" content="">
+        <meta name="keywords" content="Spring Boot, Spring,Linux,Java,Dubbo" />
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/editormd.preview.css" />
+        <link rel="stylesheet" href="/css/pagination.css">
+        <!--
+        <link rel="stylesheet" href="https://cdn.staticfile.org/lightgallery/1.3.9/css/lightgallery.min.css">
+        -->
+        <link rel="stylesheet" href="/css/share.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+
+        <!-- 数据统计 -->
+
+        <!--<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>-->
+        <!--<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>-->
+        <!--百度自动推送-->
+        <script>
+            (function(){
+                var bp = document.createElement('script');
+                var curProtocol = window.location.protocol.split(':')[0];
+                if (curProtocol === 'https') {
+                    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                }
+                else {
+                    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                }
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(bp, s);
+            })();
+        </script>
+    </head>
+</body>
+</html>
